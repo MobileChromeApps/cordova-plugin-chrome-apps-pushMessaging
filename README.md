@@ -21,3 +21,6 @@ and
 https://www.googleapis.com/auth/gcm_for_chrome.readonly
 
 # Release Notes
+## 1.1.0 (Mar 17, 2015)
+* Refactor chrome.pushMessaging to work under CSP - Use message queue for native -> JS events
+* Fix race conditions causing onLaunched not to fire
