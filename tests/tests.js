@@ -2,9 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-
-
-registerManualTests('chrome.pushMessaging', function(rootEl, addButton) {
+exports.defineManualTests = function(rootEl, addButton) {
   logger('This test requires a physical device (not an emulator)');
   logger('Please ensure that oauth2 is configured for chrome.identity');
   logger('See the README for details');
@@ -46,7 +44,7 @@ registerManualTests('chrome.pushMessaging', function(rootEl, addButton) {
           logger('Android GCM push message request failed with status ' + xhr.status + '.');
         }
       }
-    }
+    };
     var data = {'registration_ids' : [ pushMessagingIds.registrationId ], 'data' : { 'message' : 'Push message sent via Android GCM.' } };
     xhr.send(JSON.stringify(data));
 
@@ -73,7 +71,7 @@ registerManualTests('chrome.pushMessaging', function(rootEl, addButton) {
             logger('Response text: ' + xhr.responseText);
           }
         }
-      }
+      };
       var data = { 'channelId' : pushMessagingIds.channelId,
                    'subchannelId' : 0,
                    'payload' : JSON.stringify({ 'message' : 'Push message sent via Chrome GCM.' }) };
@@ -84,5 +82,4 @@ registerManualTests('chrome.pushMessaging', function(rootEl, addButton) {
 
     chrome.identity.getAuthToken({ interactive: true }, getAuthTokenCallback);
   });
-});
-
+};
