@@ -13,15 +13,6 @@
 @synthesize callback;
 @synthesize registrationToken;
 
-
-NSMutableDictionary *pendingMessages;
-
-- (CDVPlugin*)initWithWebView:(UIWebView*)theWebView
-{
-    self = [super initWithWebView:theWebView];
-    return self;
-}
-
 - (void) getRegistrationId:(CDVInvokedUrlCommand *)command; {
     self.callbackId = command.callbackId;
     CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Not Registered"];

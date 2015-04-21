@@ -17,8 +17,7 @@
 
 @property (nonatomic, strong) NSDictionary *notificationMessage;
 
-- (CDVPlugin*)initWithWebView:(UIWebView*)theWebView;
-- (void) getRegistrationId:(CDVInvokedUrlCommand *)command;
+- (void)getRegistrationId:(CDVInvokedUrlCommand *)command;
 
 - (void)messageChannel:(CDVInvokedUrlCommand *)command;
 - (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
