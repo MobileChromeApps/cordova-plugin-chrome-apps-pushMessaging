@@ -16,8 +16,8 @@
   <repo>https://github.com/MobileChromeApps/mobile-chrome-apps.git</repo>
   <issue>https://github.com/MobileChromeApps/mobile-chrome-apps/issues</issue>
 
-  <dependency id="org.chromium.common" />
-  <dependency id="org.chromium.identity" />
+  <dependency id="cordova-plugin-chrome-apps-common" />
+  <dependency id="cordova-plugin-chrome-apps-identity" />
 
   <js-module src="pushMessaging.js" name="pushMessaging">
     <clobbers target="chrome.pushMessaging" />
