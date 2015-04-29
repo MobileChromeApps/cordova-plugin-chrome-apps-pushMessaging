@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-chrome-apps-pushMessaging",
+  "version": "1.1.1-dev",
+  "description": "This plugin allows apps to receive push messages.",
+  "cordova": {
+    "id": "cordova-plugin-chrome-apps-pushmessaging",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-pushMessaging.git"
+  },
+  "keywords": [
+    "chrome",
+    "push",
+    "message",
+    "messaging",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-pushMessaging/issues"
+  },
+  "homepage": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-pushMessaging"
+}
