@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-chrome-apps-pushMessaging",
-  "version": "1.1.1-dev",
+  "version": "1.1.1",
   "description": "This plugin allows apps to receive push messages.",
   "cordova": {
     "id": "cordova-plugin-chrome-apps-pushmessaging",
